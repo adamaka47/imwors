@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Cubas</title>
+
+</head>
+<body>
+	
+	<div id="wrapper">
+		<div id="ice">
+			<div class="side" id="side1">first</div>
+			<div class="side" id="side2">second</div>
+			<div class="side" id="side3">third</div>
+			<div class="side" id="side4">fourth</div>
+			<div class="side" id="side5">fifth</div>
+			<div class="side" id="side6">sixth</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$(document).mousemove(function(ad) {
+				$('#ice').css({
+					'transform': 'rotateX('+ad.pageY+'deg) rotateY('+ad.pageX+'deg)'
+				});
+			});
+		});
+	</script>
+
+</body>
+</html>

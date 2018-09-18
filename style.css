@@ -1,0 +1,59 @@
+
+
+body {
+	background: blue;
+	font: 1em Tahoma, Arial, Consolas;
+}
+
+#wrapper {
+	margin: 80px;
+	perspective: 960px;
+
+}
+
+#ice {
+	position: relative;
+	width: 200px;
+	transform-origin: 50% 50% -100px /* center3d */
+	height: 200px;
+	transform-style: preserve-3d; /* 3d */
+	margin: 250px auto;
+}
+
+.side {
+	width: 200px;
+	height: 200px;
+	background: #888;
+	position: absolute;
+	border: 5px solid #fed;
+	border-radius: 9px;
+	background: radial-gradient(rgba(0,0,255,.1), rgba(127,0,0,.5));
+	font-size: 2em;
+	color: green;
+	line-height: 300px;
+	text-align: center;
+	text-shadow: 0 1px 3px #aeaeae;
+	box-shadow: 0 1 6px rgba(0,0,0,.5);
+	transform-origin: 50% 50% -100px; /* center3d */
+	cursor: pointer;
+
+}
+
+
+#side2 {
+	transform: rotateY(90deg);
+}
+
+#side3 {
+	transform: rotateY(-90deg);
+}
+
+#side4 {
+	transform: rotateX(90deg);
+}
+#side5 {
+	transform: rotateX(-90deg);
+}
+#side6 {
+	transform: rotateY(180deg);
+}
